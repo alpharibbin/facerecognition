@@ -1,16 +1,24 @@
 # Face Recognition App
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/alpharibbin/facerecognition)
-[![Flutter](https://img.shields.io/badge/Flutter-3.10.0+-02569B?logo=flutter)](https://flutter.dev/)
-[![Dart](https://img.shields.io/badge/Dart-3.10.0+-0175C2?logo=dart)](https://dart.dev/)
-[![Firebase](https://img.shields.io/badge/Firebase-Enabled-FFCA28?logo=firebase)](https://firebase.google.com/)
-[![TensorFlow Lite](https://img.shields.io/badge/TensorFlow%20Lite-2.12.0-FF6F00?logo=tensorflow)](https://www.tensorflow.org/lite)
 
 A Flutter-based face recognition application that uses TensorFlow Lite for face embedding generation and Google ML Kit for face detection. The app allows users to register faces and perform real-time face recognition.
 
-## Tags
+## Tech Stack
 
-`flutter` `dart` `face-recognition` `machine-learning` `tensorflow-lite` `firebase` `firestore` `google-ml-kit` `computer-vision` `ai` `face-detection` `face-embedding` `facenet` `offline-support` `hive` `camera` `attendance-system` `access-control` `biometrics` `mobile-app` `android` `ios` `cross-platform`
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Google ML Kit](https://img.shields.io/badge/Google%20ML%20Kit-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Hive](https://img.shields.io/badge/Hive-FFC107?style=for-the-badge&logo=hive&logoColor=black)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
+
+![Face Recognition](https://img.shields.io/badge/Face%20Recognition-AI-FF6B6B?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-ML-4ECDC4?style=for-the-badge)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-CV-95E1D3?style=for-the-badge)
+![Offline Support](https://img.shields.io/badge/Offline%20Support-Enabled-6C5CE7?style=for-the-badge)
 
 ## Screenshots
 
