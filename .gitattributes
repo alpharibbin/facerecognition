@@ -1,0 +1,6 @@
+# Ensure Firebase config files are treated as binary and not diffed
+*.json linguist-generated=true
+google-services.json linguist-generated=true
+GoogleService-Info.plist linguist-generated=true
+firebase_options.dart linguist-generated=true
+
