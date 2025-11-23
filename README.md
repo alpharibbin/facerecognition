@@ -6,26 +6,17 @@ A Flutter-based face recognition application that uses TensorFlow Lite for face 
 
 ## Screenshots
 
-### Home Page
-![Home Page](assets/images/homepage.jpeg)
+| Home Page                  | Verification (Before)          | Verification (After)           |
+|----------------------------|--------------------------------|--------------------------------|
+| ![Home Page](assets/images/homepage.jpeg) | ![Before](assets/images/verify1.jpeg) | ![After](assets/images/verify2.jpeg) |
 
-### Verification Page
-| Initial State | After Verification |
-|--------------|-------------------|
-| ![Verification Initial](assets/images/verify1.jpeg) | ![Verification Verified](assets/images/verify2.jpeg) |
+| Face Registration - Step 1 | Face Registration - Step 2 | Face Registration - Step 3 |
+|----------------------------|--------------------------------|--------------------------------|
+| ![Step 1](assets/images/facecapture.jpeg) | ![Step 2](assets/images/facecapture2.jpeg) | ![Step 3](assets/images/facecapture3.jpeg) |
 
-### Face Registration
-| Step 1 | Step 2 | Step 3 |
-|--------|--------|--------|
-| ![Face Capture 1](assets/images/facecapture.jpeg) | ![Face Capture 2](assets/images/facecapture2.jpeg) | ![Face Capture 3](assets/images/facecapture3.jpeg) |
-
-### Face Detection
-| Single Face | Multiple Faces |
-|-------------|----------------|
-| ![Single Face Detection](assets/images/singleface.jpeg) | ![Multiple Faces Detection](assets/images/multifaces.jpeg) |
-
-### View All Registered
-![View All List](assets/images/viewalllist.jpeg)
+| Single Face Detection      | Multiple Faces Detection       | View All Registered            |
+|----------------------------|--------------------------------|--------------------------------|
+| ![Single](assets/images/singleface.jpeg) | ![Multiple](assets/images/multifaces.jpeg) | ![List](assets/images/viewalllist.jpeg) |
 
 ## Features
 

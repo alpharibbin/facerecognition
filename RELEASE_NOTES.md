@@ -6,11 +6,9 @@ Download the latest APK from the [Releases](https://github.com/alpharibbin/facer
 
 ## 📸 Screenshots
 
-![Home Page](assets/images/homepage.jpeg)
-
-![Face Detection](assets/images/singleface.jpeg)
-
-![View All Registered](assets/images/viewalllist.jpeg)
+| Home Page                  | Face Detaction                 | View All Registered            |
+|----------------------------|--------------------------------|--------------------------------|
+| ![Home Page](assets/images/homepage.jpeg) | ![Before](assets/images/multifaces.jpeg) | ![After](assets/images/viewalllist.jpeg) |
 
 ## ✨ Features
 
