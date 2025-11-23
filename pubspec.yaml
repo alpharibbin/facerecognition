@@ -32,6 +32,7 @@ flutter:
   assets:
     - assets/models/model.tflite
     - assets/models/facenet.tflite
+    - assets/images/banner.png
     - assets/images/homepage.jpeg
     - assets/images/viewalllist.jpeg
     - assets/images/verify1.jpeg

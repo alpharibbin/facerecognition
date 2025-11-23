@@ -1,10 +1,18 @@
 # Face Recognition App
 
+<div align="center">
+  <img src="assets/images/banner.png" alt="Face Recognition App Banner" width="100%">
+</div>
+
+<div align="center">
+
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/alpharibbin/facerecognition)
 [![Flutter](https://img.shields.io/badge/Flutter-3.10.0+-02569B?logo=flutter)](https://flutter.dev/)
 [![Dart](https://img.shields.io/badge/Dart-3.10.0+-0175C2?logo=dart)](https://dart.dev/)
 [![Firebase](https://img.shields.io/badge/Firebase-Enabled-FFCA28?logo=firebase)](https://firebase.google.com/)
 [![TensorFlow Lite](https://img.shields.io/badge/TensorFlow%20Lite-2.12.0-FF6F00?logo=tensorflow)](https://www.tensorflow.org/lite)
+
+</div>
 
 A Flutter-based face recognition application that uses TensorFlow Lite for face embedding generation and Google ML Kit for face detection. The app allows users to register faces and perform real-time face recognition.
 
