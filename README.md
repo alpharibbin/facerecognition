@@ -171,8 +171,6 @@ Comprehensive documentation is available in the `docs/` folder:
 
 ### Register a Face
 
-![Face Registration Process](assets/images/facecapture.jpeg)
-
 1. Click the **"+"** button on the View All page
 2. Enter email address in the verification page
 3. (Optional) Click **"Verify"** to check if user exists
@@ -183,16 +181,12 @@ Comprehensive documentation is available in the `docs/` folder:
 
 ### Detect Faces
 
-![Face Detection](assets/images/singleface.jpeg)
-
 1. Click **"Detect Face"** on the home page
 2. Point camera at faces
 3. The app will automatically detect and identify registered faces
 4. Supports both single and multiple face detection
 
 ### View Registered Faces
-
-![View All Registered](assets/images/viewalllist.jpeg)
 
 1. Click **"View All"** on the home page
 2. Browse all registered faces
