@@ -15,6 +15,8 @@ This document provides detailed information about all features in the Face Recog
 
 The main entry point of the application.
 
+![Home Page](assets/images/homepage.jpeg)
+
 ### Features
 
 - **Two Main Actions**:
@@ -40,6 +42,10 @@ Complete workflow for registering a new face.
 ### Step 1: Email Verification
 
 **Page**: `VerificationPage`
+
+| Initial State | After Verification |
+|--------------|-------------------|
+| ![Verification Initial](assets/images/verify1.jpeg) | ![Verification Verified](assets/images/verify2.jpeg) |
 
 **Features**:
 - Email input field
@@ -75,6 +81,8 @@ Complete workflow for registering a new face.
 
 **Page**: `RegistrationPage`
 
+![Face Capture Process](assets/images/facecapture.jpeg)
+
 **Features**:
 - Camera preview with guide overlay
 - Green grid overlay for face positioning
@@ -109,6 +117,10 @@ Complete workflow for registering a new face.
 Real-time face detection and recognition.
 
 **Page**: `DetectionPage`
+
+| Single Face Detection | Multiple Faces Detection |
+|----------------------|-------------------------|
+| ![Single Face](assets/images/singleface.jpeg) | ![Multiple Faces](assets/images/multifaces.jpeg) |
 
 ### Features
 
@@ -165,6 +177,8 @@ For each detected face:
 Browse and manage all registered faces.
 
 **Page**: `ViewAllRegisteredPage`
+
+![View All Registered List](assets/images/viewalllist.jpeg)
 
 ### Features
 

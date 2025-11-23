@@ -54,3 +54,12 @@ flutter:
   assets:
     - assets/models/model.tflite
     - assets/models/facenet.tflite
+    - assets/images/homepage.jpeg
+    - assets/images/viewalllist.jpeg
+    - assets/images/verify1.jpeg
+    - assets/images/verify2.jpeg
+    - assets/images/facecapture.jpeg
+    - assets/images/facecapture2.jpeg
+    - assets/images/facecapture3.jpeg
+    - assets/images/singleface.jpeg
+    - assets/images/multifaces.jpeg

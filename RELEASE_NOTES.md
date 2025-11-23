@@ -4,6 +4,14 @@
 
 Download the latest APK from the [Releases](https://github.com/alpharibbin/facerecognition/releases) page.
 
+## 📸 Screenshots
+
+![Home Page](assets/images/homepage.jpeg)
+
+![Face Detection](assets/images/singleface.jpeg)
+
+![View All Registered](assets/images/viewalllist.jpeg)
+
 ## ✨ Features
 
 - 📸 **Face Registration**: Register faces with email and name

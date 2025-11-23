@@ -4,6 +4,29 @@
 
 A Flutter-based face recognition application that uses TensorFlow Lite for face embedding generation and Google ML Kit for face detection. The app allows users to register faces and perform real-time face recognition.
 
+## Screenshots
+
+### Home Page
+![Home Page](assets/images/homepage.jpeg)
+
+### Verification Page
+| Initial State | After Verification |
+|--------------|-------------------|
+| ![Verification Initial](assets/images/verify1.jpeg) | ![Verification Verified](assets/images/verify2.jpeg) |
+
+### Face Registration
+| Step 1 | Step 2 | Step 3 |
+|--------|--------|--------|
+| ![Face Capture 1](assets/images/facecapture.jpeg) | ![Face Capture 2](assets/images/facecapture2.jpeg) | ![Face Capture 3](assets/images/facecapture3.jpeg) |
+
+### Face Detection
+| Single Face | Multiple Faces |
+|-------------|----------------|
+| ![Single Face Detection](assets/images/singleface.jpeg) | ![Multiple Faces Detection](assets/images/multifaces.jpeg) |
+
+### View All Registered
+![View All List](assets/images/viewalllist.jpeg)
+
 ## Features
 
 - 📸 **Face Registration**: Register faces with email and name
@@ -137,6 +160,8 @@ Comprehensive documentation is available in the `docs/` folder:
 
 ### Register a Face
 
+![Face Registration Process](assets/images/facecapture.jpeg)
+
 1. Click the **"+"** button on the View All page
 2. Enter email address in the verification page
 3. (Optional) Click **"Verify"** to check if user exists
@@ -147,11 +172,16 @@ Comprehensive documentation is available in the `docs/` folder:
 
 ### Detect Faces
 
+![Face Detection](assets/images/singleface.jpeg)
+
 1. Click **"Detect Face"** on the home page
 2. Point camera at faces
 3. The app will automatically detect and identify registered faces
+4. Supports both single and multiple face detection
 
 ### View Registered Faces
+
+![View All Registered](assets/images/viewalllist.jpeg)
 
 1. Click **"View All"** on the home page
 2. Browse all registered faces
