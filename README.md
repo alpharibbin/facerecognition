@@ -26,7 +26,6 @@ A Flutter-based face recognition application that uses TensorFlow Lite for face 
 ![Hive](https://img.shields.io/badge/Hive-FFC107?style=for-the-badge&logo=hive&logoColor=black)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
-
 ![Face Recognition](https://img.shields.io/badge/Face%20Recognition-AI-FF6B6B?style=for-the-badge)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-ML-4ECDC4?style=for-the-badge)
 ![Computer Vision](https://img.shields.io/badge/Computer%20Vision-CV-95E1D3?style=for-the-badge)
