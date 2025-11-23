@@ -244,7 +244,7 @@ class MyHomePage extends StatelessWidget {
                       context,
                       Icons.search,
                       'Search & Manage',
-                      'View all registered faces, search by name or email, and re-register if needed.',
+                      'View all registered faces, search by name or email, re-register, or delete if needed.',
                     ),
                   ],
                 ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:hive/hive.dart';
 import '../services/detection_service.dart';
+import '../models/face_embedding.dart';
 import 'VerificationPage.dart';
 import 'RegistrationPage.dart';
 
@@ -121,6 +123,86 @@ class _ViewAllRegisteredPageState extends State<ViewAllRegisteredPage> {
       context,
       MaterialPageRoute(builder: (_) => RegistrationPage(initialEmail: email)),
     ).then((_) => _loadRegisteredFaces());
+  }
+
+  Future<void> _deleteFace(String email, String name) async {
+    // Show confirmation dialog
+    final confirm = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Delete Face'),
+        content: Text(
+          'Are you sure you want to delete the face registration for ${name.isNotEmpty ? name : email}?\n\nThis action cannot be undone.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.red,
+            ),
+            child: const Text('Delete'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirm != true || !mounted) return;
+
+    try {
+      // Show loading
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Deleting...'),
+            duration: Duration(seconds: 1),
+          ),
+        );
+      }
+
+      // Delete from Firestore
+      await FirebaseFirestore.instance
+          .collection('users')
+          .doc(email)
+          .delete();
+
+      // Delete from Hive (local storage)
+      final box = await Hive.openBox<FaceEmbedding>('face_embeddings_box');
+      final key = name.isNotEmpty ? name : email;
+      await box.delete(key);
+
+      // Reload the list
+      await _loadRegisteredFaces();
+
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Face registration deleted successfully'),
+          duration: Duration(seconds: 2),
+          backgroundColor: Colors.green,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(8)),
+          ),
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error deleting face: $e'),
+          duration: const Duration(seconds: 2),
+          backgroundColor: Colors.red,
+          behavior: SnackBarBehavior.floating,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(8)),
+          ),
+        ),
+      );
+    }
   }
 
   Future<void> _showStudentDetails(String email) async {
@@ -281,6 +363,12 @@ class _ViewAllRegisteredPageState extends State<ViewAllRegisteredPage> {
                                       onTap: () =>
                                           Navigator.pop(ctx, 'register'),
                                     ),
+                                    ListTile(
+                                      leading: const Icon(Icons.delete, color: Colors.red),
+                                      title: const Text('Delete', style: TextStyle(color: Colors.red)),
+                                      onTap: () =>
+                                          Navigator.pop(ctx, 'delete'),
+                                    ),
                                   ],
                                 ),
                               );
@@ -291,6 +379,8 @@ class _ViewAllRegisteredPageState extends State<ViewAllRegisteredPage> {
                             await _showStudentDetails(email);
                           } else if (action == 'register') {
                             await _registerAgain(email);
+                          } else if (action == 'delete') {
+                            await _deleteFace(email, name);
                           }
                         },
                         child: Padding(

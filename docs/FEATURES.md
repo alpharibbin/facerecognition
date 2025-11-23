@@ -177,6 +177,7 @@ Browse and manage all registered faces.
   - **Double-tap**: Show action sheet
     - View Details
     - Register Again
+    - Delete (with confirmation)
   - **Replay Icon**: Quick re-register
 
 - **Navigation**:
@@ -189,6 +190,16 @@ Shows dialog with:
 - Email address
 - Name
 - Other user information (if available)
+
+### Delete Face
+
+- **Access**: Double-tap a face → Select "Delete"
+- **Confirmation**: Shows confirmation dialog before deletion
+- **Deletion**: 
+  - Removes from Firestore database
+  - Removes from local Hive storage
+  - Updates the list automatically
+- **Safety**: Cannot be undone, requires explicit confirmation
 
 ### Sync Functionality
 

@@ -155,7 +155,10 @@ Comprehensive documentation is available in the `docs/` folder:
 1. Click **"View All"** on the home page
 2. Browse all registered faces
 3. Use search to filter by name or email
-4. Double-tap a face to view details or re-register
+4. Double-tap a face to:
+   - View details
+   - Register again
+   - Delete (with confirmation)
 
 ## Firebase Structure
 
