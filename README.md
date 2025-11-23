@@ -139,10 +139,11 @@ Comprehensive documentation is available in the `docs/` folder:
 
 1. Click the **"+"** button on the View All page
 2. Enter email address in the verification page
-3. Enter name (optional)
-4. Click **"Continue"** to proceed to registration
-5. Position face in the camera view
-6. Click **"Capture & Register"** to capture 3 images and register
+3. (Optional) Click **"Verify"** to check if user exists
+4. Enter or edit name (always enabled)
+5. Click **"Continue"** or **"Add New"** to proceed to registration
+6. Position face in the camera view
+7. Click **"Capture & Register"** to capture 3 images and register
 
 ### Detect Faces
 

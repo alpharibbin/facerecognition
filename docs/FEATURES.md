@@ -43,24 +43,33 @@ Complete workflow for registering a new face.
 
 **Features**:
 - Email input field
-- Real-time email validation
-- Check if email exists in Firestore `users` collection
-- Name input field (populated if user exists)
+- Name input field (always enabled for editing)
+- Optional verification to check if email exists in Firestore `users` collection
+- Name field is automatically populated if user exists (after verification)
 - Visual feedback:
-  - 🔴 Red: Email not verified
-  - 🟢 Green: Email verified
-  - ⏳ Gray: Checking
+  - 🟠 Orange: New user - can add record (when email not found)
+  - 🟢 Green: Email verified (user exists in Firestore)
+  - ⏳ Gray: Checking email in Firestore
 
-**Validation**:
-- Email format validation
-- Check against Firestore `users` collection
-- Document ID is the email address
+**Verification Process**:
+- **Verify Button**: Checks if email exists in Firestore `users` collection
+  - If exists: 
+    - Shows "Found in students" or "Email already registered" (if has embedding)
+    - Populates name field automatically
+    - Sets verified status to true
+  - If not exists: 
+    - Shows "New user - can add record" (orange)
+    - Sets verified status to false
+- **Continue/Add New Button**: 
+  - Works for both existing and new users (doesn't require verification)
+  - Creates or updates user document in `users` collection with name
+  - Navigates to registration page
+  - Button text: "Continue" (if verified) or "Add New" (if not verified)
 
-**Actions**:
-- **Verify Button**: Check email in Firestore
-- **Continue/Edit Button**: 
-  - If new user: Create document in `users` collection
-  - Navigate to registration page
+**Important Notes**:
+- Verification is optional - you can proceed without clicking "Verify"
+- Name field is always enabled, allowing editing for existing users or entry for new users
+- Both new and existing users can be registered/updated
 
 ### Step 2: Face Capture
 

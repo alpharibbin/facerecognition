@@ -58,9 +58,11 @@ The Face Recognition app follows a layered architecture with clear separation of
 ### Face Registration Flow
 
 ```
-User Input (Email)
+User Input (Email & Name)
     ↓
-VerificationPage (Verify email exists in users collection)
+VerificationPage (Optional: Verify if email exists in users collection)
+    ↓
+Create/Update user document in users collection
     ↓
 RegistrationPage (Capture 3 face images)
     ↓
@@ -68,7 +70,7 @@ FaceEmbedder (Generate embeddings from images)
     ↓
 Average embeddings
     ↓
-Firestore (Save to users/{email})
+Firestore (Save to users/{email} with embedding)
     ↓
 Hive (Save locally for offline access)
 ```
@@ -131,13 +133,16 @@ Listen for real-time updates
 - **Dependencies**: FaceEmbedder, Camera, Firestore
 
 #### VerificationPage
-- **Purpose**: Verify email before registration
+- **Purpose**: Enter email and name before registration (with optional verification)
 - **Features**:
-  - Email validation
-  - Check if user exists in Firestore
-  - Name input
-  - Navigate to registration
+  - Email input field
+  - Name input field (always enabled)
+  - Optional verification to check if user exists in Firestore
+  - Auto-populate name if user exists
+  - Create or update user document
+  - Navigate to registration page
 - **Dependencies**: Firestore
+- **Note**: Verification is optional - users can proceed directly to registration without clicking "Verify"
 
 #### ViewAllRegisteredPage
 - **Purpose**: Display all registered faces

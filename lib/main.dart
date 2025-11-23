@@ -230,7 +230,7 @@ class MyHomePage extends StatelessWidget {
                       context,
                       Icons.person_add,
                       'Register a Face',
-                      'Click the + button on View All page to register a new face with email and name.',
+                      'Click the + button on View All page. Enter email and name, then proceed to capture face.',
                     ),
                     const SizedBox(height: 12),
                     _buildInstructionItem(
