@@ -28,7 +28,7 @@ A Flutter-based face recognition application that uses TensorFlow Lite for face 
 
 | Home Page                  | Verification User 2            | Verification User 3            |
 |----------------------------|--------------------------------|--------------------------------|
-| ![Home Page](assets/images/homepage.jpeg) | ![Before](assets/images/verify1.jpeg) | ![After](assets/images/verify2.jpeg) |
+| ![Home Page](assets/images/homepage.jpeg) | ![User 2](assets/images/verify1.jpeg) | ![User 3](assets/images/verify2.jpeg) |
 
 | Face Registration - User 1 | Face Registration - User 2 | Face Registration - User 3 |
 |----------------------------|--------------------------------|--------------------------------|
