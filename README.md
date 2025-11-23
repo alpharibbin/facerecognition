@@ -26,13 +26,13 @@ A Flutter-based face recognition application that uses TensorFlow Lite for face 
 
 ## Screenshots
 
-| Home Page                  | Verification (Before)          | Verification (After)           |
+| Home Page                  | Verification User 2            | Verification User 3            |
 |----------------------------|--------------------------------|--------------------------------|
 | ![Home Page](assets/images/homepage.jpeg) | ![Before](assets/images/verify1.jpeg) | ![After](assets/images/verify2.jpeg) |
 
-| Face Registration - Step 1 | Face Registration - Step 2 | Face Registration - Step 3 |
+| Face Registration - User 1 | Face Registration - User 2 | Face Registration - User 3 |
 |----------------------------|--------------------------------|--------------------------------|
-| ![Step 1](assets/images/facecapture.jpeg) | ![Step 2](assets/images/facecapture2.jpeg) | ![Step 3](assets/images/facecapture3.jpeg) |
+| ![User 1](assets/images/facecapture.jpeg) | ![User 2](assets/images/facecapture2.jpeg) | ![User 3](assets/images/facecapture3.jpeg) |
 
 | Single Face Detection      | Multiple Faces Detection       | View All Registered            |
 |----------------------------|--------------------------------|--------------------------------|
